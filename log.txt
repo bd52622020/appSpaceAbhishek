@@ -1,0 +1,89 @@
+./JDK_get_python_reqs.sh: line 4: pip: command not found
+./JDK_get_python_reqs.sh: line 7: python2: command not found
+find: ‘jdk*gz’: No such file or directory
+tar: Old option 'f' requires an argument.
+Try 'tar --help' or 'tar --usage' for more information.
+find: ‘./jdk*’: No such file or directory
+mv: cannot stat './jdk': No such file or directory
+2020-06-06 15:21:57 URL:https://www.python.org/ftp/python/3.8.2/Python-3.8.2.tgz [24007411/24007411] -> "Python-3.8.2.tgz" [1]
+2020-06-06 15:22:56 URL:http://mirror.dkm.cz/eclipse/technology/epp/downloads/release/2020-03/R/eclipse-java-2020-03-R-linux-gtk-x86_64.tar.gz [201754965/201754965] -> "eclipse-java-2020-03-R-linux-gtk-x86_64.tar.gz" [1]
+find: ‘build’: No such file or directory
+find: ‘build’: No such file or directory
+find: ‘build’: No such file or directory
+find: ‘build’: No such file or directory
+make[2]: [Makefile:1778: clean] Error 1 (ignored)
+/home/abhi/Documents/mini_project_1/scripts/Python-3.8.2/Modules/_testcapimodule.c: In function ‘PyInit__testcapi’:
+/home/abhi/Documents/mini_project_1/scripts/Python-3.8.2/Modules/_testcapimodule.c:6216:5: warning: ‘tp_print’ is deprecated [-Wdeprecated-declarations]
+ 6216 |     MyList_Type.tp_print = 0;
+      |     ^~~~~~~~~~~
+In file included from ./Include/object.h:746,
+                 from ./Include/pytime.h:6,
+                 from ./Include/Python.h:85,
+                 from /home/abhi/Documents/mini_project_1/scripts/Python-3.8.2/Modules/_testcapimodule.c:15:
+./Include/cpython/object.h:260:30: note: declared here
+  260 |     Py_DEPRECATED(3.8) int (*tp_print)(PyObject *, FILE *, int);
+      |                              ^~~~~~~~
+test test_generators failed
+/home/abhi/Documents/mini_project_1/scripts/Python-3.8.2/Lib/test/test_hashlib.py:97: UserWarning: Did a C extension fail to compile? No module named '_hashlib'
+  warnings.warn('Did a C extension fail to compile? %s' % error)
+Parser/listnode.c: In function ‘list1node’:
+Parser/listnode.c:66:1: warning: ‘/home/abhi/Documents/mini_project_1/scripts/Python-3.8.2/Parser/listnode.gcda’ profile count data file not found [-Wmissing-profile]
+   66 | }
+      | ^
+Python/frozenmain.c: In function ‘Py_FrozenMain’:
+Python/frozenmain.c:129:1: warning: ‘/home/abhi/Documents/mini_project_1/scripts/Python-3.8.2/Python/frozenmain.gcda’ profile count data file not found [-Wmissing-profile]
+  129 | }
+      | ^
+Python/pyfpe.c: In function ‘PyFPE_dummy’:
+Python/pyfpe.c:15:1: warning: ‘/home/abhi/Documents/mini_project_1/scripts/Python-3.8.2/Python/pyfpe.gcda’ profile count data file not found [-Wmissing-profile]
+   15 | }
+      | ^
+/home/abhi/Documents/mini_project_1/scripts/Python-3.8.2/Modules/_testcapimodule.c: In function ‘PyInit__testcapi’:
+/home/abhi/Documents/mini_project_1/scripts/Python-3.8.2/Modules/_testcapimodule.c:6216:5: warning: ‘tp_print’ is deprecated [-Wdeprecated-declarations]
+ 6216 |     MyList_Type.tp_print = 0;
+      |     ^~~~~~~~~~~
+In file included from ./Include/object.h:746,
+                 from ./Include/pytime.h:6,
+                 from ./Include/Python.h:85,
+                 from /home/abhi/Documents/mini_project_1/scripts/Python-3.8.2/Modules/_testcapimodule.c:15:
+./Include/cpython/object.h:260:30: note: declared here
+  260 |     Py_DEPRECATED(3.8) int (*tp_print)(PyObject *, FILE *, int);
+      |                              ^~~~~~~~
+Traceback (most recent call last):
+  File "<frozen zipimport>", line 520, in _get_decompress_func
+ModuleNotFoundError: No module named 'zlib'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen zipimport>", line 568, in _get_data
+  File "<frozen zipimport>", line 523, in _get_decompress_func
+zipimport.ZipImportError: can't decompress data; zlib not available
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abhi/Documents/mini_project_1/scripts/Python-3.8.2/Lib/runpy.py", line 193, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/abhi/Documents/mini_project_1/scripts/Python-3.8.2/Lib/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/abhi/Documents/mini_project_1/scripts/Python-3.8.2/Lib/ensurepip/__main__.py", line 5, in <module>
+    sys.exit(ensurepip._main())
+  File "/home/abhi/Documents/mini_project_1/scripts/Python-3.8.2/Lib/ensurepip/__init__.py", line 200, in _main
+    return _bootstrap(
+  File "/home/abhi/Documents/mini_project_1/scripts/Python-3.8.2/Lib/ensurepip/__init__.py", line 119, in _bootstrap
+    return _run_pip(args + [p[0] for p in _PROJECTS], additional_paths)
+  File "/home/abhi/Documents/mini_project_1/scripts/Python-3.8.2/Lib/ensurepip/__init__.py", line 27, in _run_pip
+    import pip._internal
+  File "<frozen zipimport>", line 241, in load_module
+  File "<frozen zipimport>", line 709, in _get_module_code
+  File "<frozen zipimport>", line 570, in _get_data
+zipimport.ZipImportError: can't decompress data; zlib not available
+make: *** [Makefile:1186: install] Error 1
+./python_install.sh: line 15: curl: command not found
+/home/abhi/Software/python3.8/bin/python3.8: can't open file 'get-pip.py': [Errno 2] No such file or directory
+update-alternatives: error: alternative path /home/abhi/Software/python3.8/bin/pip3 doesn't exist
+update-alternatives: error: alternative path /home/abhi/Software/jdk/bin/java doesn't exist
+update-alternatives: error: alternative path /home/abhi/Software/jdk/bin/java doesn't exist
+update-alternatives: error: alternative path /home/abhi/Software/jdk/bin/javac doesn't exist
+update-alternatives: error: alternative path /home/abhi/Software/jdk/bin/javac doesn't exist
