@@ -1,3 +1,44 @@
 1. Understanding HDFS
-2. Multi-processing and multi-treading
-3. Is python multiprocessing and multi-treading or it just amulition(parallelisation) ?
+Hadoop Distributed file system.
+
+HDFS is a distributed file system for storing very large data files, running on clusters of commodity hardware. 
+It is fault tolerant, scalable, and extremely simple to expand. 
+
+When data exceeds the capacity of storage on a single physical machine, it becomes essential to divide it across a number of separate machines.
+A file system that manages storage specific operations across a network of machines is called a distributed file system. 
+
+Strength: 1.Linear Scaling -fit to scale
+	 2.Redundacy (Back-up)
+	3. Security -Allows security frameworks
+	4. High availability of data
+Shortcoming:
+	1. No updates- where data is updated
+	2. Limited Querying
+	3. Queries very slow
+
+HDFS cluster primarily consists of a NameNode that manages the file system Metadata and a DataNodes that stores the actual data.
+
+
+
+
+2. Multi-processing and multi-threading
+
+Both are ways to acheive multi-tasking. 
+
+
+Multiithreading -  Multiple threading lives within a same process. 
+		Each thread does own task but share address space. 
+		Heat memory and global variable defining programing can be accessed by these threads.
+Multi-processing - Different program are running on computer. 
+		Process has own address space. communicate through interprocess techniques like file on disk, shared memory or message pip. 
+		Major benefit of multi processing is that error or memory leak in one process wont hurt execution of another process.
+
+Threads are light weight and processes are heavy weights.
+
+
+
+3. Is python multiprocessing and multi-threading or it just amulition(parallelisation) ?
+
+Python multi-threading can work sometimes sometime needs to use LOCK 
+Python multiprocessing works by use of sub-processes.(eg. from multiprocessing import Pool)
+
