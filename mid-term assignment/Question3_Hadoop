@@ -1,0 +1,36 @@
+What are core components of Hadoop?
+
+HDFS(HAdoop Distributed File system)
+YARN
+MapReduce
+Hadoop common
+
+What is difference name Node & Data Node ?
+HDFS or Hadoop follows Slave master Architecture.
+NameNode is Master node
+DAtaNode is Slave node
+
+
+What does .jps command do in hadoop
+
+Java Virtual Machine Process Status tool check all hadoop system like NAmenode, Datanode, Resource Manager and Node manager
+They check is all these system as working properly before going forward with any Hadoop operations
+
+What do you mean by metadata in hadoop ?
+File location, block size and file permission are store in Namenode. it is responsible for sending signal to replicate if data node is not avaialble.
+
+Hence meta data is store in memory of Name node. HEnce its called MEtadata.
+
+What is a block in HDFS, why block is 64mb ?
+
+Block size is smallest unit if data that file can store.
+
+If file stores more than 1K or 60Mb, it will take one block. So after 64mb you need another block.
+
+by doing this HDFS handles large files.
+
+Default data block size of HDFS/Hadoop is 64MB.
+
+ The block size in disk is generally 4KB. Why block size is large in HDFS/Hadoop.
+
+

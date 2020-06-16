@@ -1,0 +1,61 @@
+What are RDD Operations in Spark? 
+
+RDD is Resilient Distributed Datasets.
+
+These are the most fundamental structure of Spark.
+
+As everything in Spark is an object, RDD's are too immutable objects in distributed form.
+
+RDD's are divided into dataset which distributed among the cluster in different nodes.
+
+RDD's are created by parallelizing or referencing a datasets.
+
+Due to mapreduce function, RDD's are essentially of great ussage to fasten the process efficiently.
+
+
+2.What is a DAG in spark ? 
+
+Directed Acyclic Graph in Apache Spark and is an alternative to MapReduce is called DAG. 
+
+It is a style of programming used in distributed systems.
+
+In MapReduce, we just have two functions (map and reduce), while DAG has multiple levels that form a tree structure. 
+
+Hence, DAG execution is faster than MapReduce because intermediate results do not write to disk.
+
+
+What is the role of a spark Driver ? 
+
+Spark driver creates SparkContext and then connection is give to Spark Master.
+
+Spark driver is the program which is defined  by its the transformations and actions on RDDs of knowledge, along with its submission requests to the master. 
+
+Spark driver a program that runs on the master node which forms transformations and actions with reference to RDDs in machine.
+
+
+
+It conjointly delivers the RDD graphs to Master, wherever the standalone cluster manager runs
+
+
+
+Does spark achieve fault tolerance ? 
+
+
+
+If any of the nodes of processing data gets crashed, that results in a fault in a cluster. 
+
+In other words, RDD is logically partitioned and each node is operating on a partition at any point in time. 
+
+Operations which are being performed is a series of scala functions. Those operations are being executed on that partition of RDD. 
+
+This series of operations are merged together and create a DAG. That means DAG keeps track of operations performed.
+
+If any node crashes in the middle of an operation, the cluster manager finds out that node. 
+
+Then, it tries to assign another node to continue the processing at the same place. 
+
+This node will operate on the same partition of RDD and series of operations. 
+
+Due to this new node, there is effectively no data loss. Meanwhile, that new node continues the processing smoothly.
+
+

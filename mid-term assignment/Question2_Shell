@@ -1,0 +1,17 @@
+How to make a shell Script executable ?
+
+1. Create a new txt file with a .sh extension
+2. Add #!/bin/bash on top of it to make it executable.
+3. Add command line with full content. 
+4. Make command line chmod u+x <filename>.sh to ran file executable.
+5. So to run this file, use ./deploy.sh
+
+
+Use of #!/bin/bash ?
+
+It is used to make file executable
+
+
+Resolving variables in a shellscript?
+
+By adding environmental variables, arguments and return values, we can resolve variables in a shellscripts.
