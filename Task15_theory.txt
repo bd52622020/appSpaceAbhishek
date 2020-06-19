@@ -16,3 +16,6 @@ map is a transformation operation and is narrow in nature
 mapvalue is only for PairRDD's 
 mapvalues operate on the value only, while map operated on entire record which can be tuple of key and value.
 
+transformation and keys
+
+reducebyKey will assign key:value pairs to data
