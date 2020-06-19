@@ -1,0 +1,18 @@
+Purpose of local or local[*] in scala
+
+----local[*] run scala locally with as manay worker threads as logical cores on your machine
+
+Difference between map and flatMap
+-- Map only returns one elements while flatmap return a list of element as an iterator
+
+Creating RDD's
+--Two ways are 
+1. Parallelizing an existing collection in your driver program
+2. Referencing a dataset in an external storage system such as shared filesystem, HDFS, HBase, or any data source offering a Hadoop InputFormat
+
+Map and mapValues
+
+map is a transformation operation and is narrow in nature
+mapvalue is only for PairRDD's 
+mapvalues operate on the value only, while map operated on entire record which can be tuple of key and value.
+
